@@ -24,7 +24,7 @@ The architecture follows a distributed control model:
 - 12V power supply for actuators
 - Common ground across all modules
 
-![Fan Driver Schematic](./Schematic_arduinoFANS.png)
+![Fan Driver Schematic](./hardware/schematics/Schematic_arduinoFANS.png)
 
 ---
 
@@ -38,7 +38,7 @@ Environmental monitoring components:
 - 5V Opto-isolated 2-channel relay module
 - 220VAC heater switching via COM–NO configuration
 
-![IO & Sensor Schematic](./Schematic_arduinoIO.png)
+![IO & Sensor Schematic](./hardware/schematics/Schematic_arduinoIO.png)
 
 ---
 
