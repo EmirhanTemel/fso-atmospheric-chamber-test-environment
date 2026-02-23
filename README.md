@@ -14,17 +14,7 @@ The architecture follows a distributed control model:
 
 ---
 
-## System Architecture
-
-The system uses a distributed supervisory control architecture where the Raspberry Pi handles user interaction and high-level logic, while the Arduino Mega performs deterministic hardware-level operations.
-
-### Architecture Diagram
-
-![System Architecture](./system_architecture.png)
-
----
-
-## Hardware Design
+## Hardware Architecture
 
 ### Fan & Pump Control
 
@@ -34,13 +24,11 @@ The system uses a distributed supervisory control architecture where the Raspber
 - 12V power supply for actuators
 - Common ground across all modules
 
-### Fan Driver Schematic
-
 ![Fan Driver Schematic](./Schematic_arduinoFANS.png)
 
 ---
 
-### Sensor & IO Interface
+## Sensor & IO Interface
 
 Environmental monitoring components:
 
@@ -49,8 +37,6 @@ Environmental monitoring components:
 - GP2Y1010AU0F – Dust sensor (220µF capacitor + 150Ω resistor)
 - 5V Opto-isolated 2-channel relay module
 - 220VAC heater switching via COM–NO configuration
-
-### IO & Sensor Schematic
 
 ![IO & Sensor Schematic](./Schematic_arduinoIO.png)
 
@@ -67,15 +53,13 @@ The system enables:
 - Touchscreen-based supervisory control
 - Serial-based actuator command protocol
 
-This configuration allows flexible environmental parameter tuning during FSO experimental simulations.
-
 ---
 
 ## Communication Layer
 
 - USB Serial Communication
 - Baud Rate: 9600
-- Command-based actuator control protocol
+- Command-based actuator control
 - Periodic sensor data transmission to Raspberry Pi
 
 ---
@@ -106,12 +90,3 @@ This configuration allows flexible environmental parameter tuning during FSO exp
 - Real-time hardware control
 - Practical serial protocol implementation
 - System-level debugging and hardware validation
-
----
-
-## Future Scope (Conceptual)
-
-- Closed-loop environmental automation
-- PID-based actuator regulation
-- Enhanced communication protocol
-- Remote monitoring capability
